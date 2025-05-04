@@ -1,1 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Match Results</title>
+</head>
+<body style="font-family:sans-serif;">
+    <h2>Top Matching Candidates</h2>
+    <ol>
+        {% for name, score in matched %}
+            <li>{{ name }} — Match Score: {{ '%.2f' | format(score * 100) }}%</li>
+        {% endfor %}
+    </ol>
+    <a href="/">Try Again</a>
+</body>
+</html>
 
