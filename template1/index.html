@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Matcher</title>
+</head>
+<body style="font-family:sans-serif;">
+    <h2>Upload Resumes and Job Description</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label>Select PDF Resumes:</label><br>
+        <input type="file" name="resumes" multiple required><br><br>
+        <label>Enter Job Description (Skills, Role, etc):</label><br>
+        <textarea name="job" rows="6" cols="60" required></textarea><br><br>
+        <input type="submit" value="Find Best Match">
+    </form>
+</body>
+</html>
